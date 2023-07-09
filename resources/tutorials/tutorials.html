@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Files</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Fetch the JSON data
+      $.getJSON('./data/links.json', function(data) {
+        var links = data.links;
+
+        // Function to display links based on the selected category
+        function displayLinks(category) {
+          // Clear the existing links
+          $('#linkList').empty();
+
+          // Filter the links based on the selected category
+          var filteredLinks = (category === 'all') ? links : links.filter(function(link) {
+            return link.categories.includes(category);
+          });
+
+          // Iterate through the filtered links and create the list
+          $.each(filteredLinks, function(index, link) {
+            var listItem = $('<li class="card feature"></li>');
+            var linkText = $('<a></a>').attr('href', link.url).text(link.name);
+            // ADD IMG ELEMENT WITH SRC='LINK.IMG' 
+            var linkImg = $('<img></img>').attr('src', "../../images/thumbnails/"+link.image)
+            listItem.append(linkText);
+            listItem.append(linkImg);
+            $('#linkList').append(listItem);
+          });
+        }
+
+        // Event handler for category buttons
+        $('.categoryBtn').click(function() {
+          var category = $(this).data('category');
+          displayLinks(category);
+        });
+
+        // Display all links initially
+        displayLinks('all');
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../css/resources.css">
+</head>
+<body>
+  <nav>
+    <div class="container nav-container">
+      <a href="index.html"><h4>Website</h4></a>
+      <ul class="nav-menu">
+        <li><a href="">About</a></li>
+        <li><a href="./resources.html">Courses</a></li>
+        <li><div class="current"><p class="current-tab">Resources</p></div></li>
+        <li><a href="">Quiz</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href=""><i class="fa-solid fa-right-to-bracket"></i></a></li>
+      </ul>
+  </div>
+  </nav>
+  <h1 id="heading">Tutorials</h1>
+
+  <div class="filter-btn">
+    <button class="categoryBtn btn btn-primary" data-category="all">All</button>
+    <button class="categoryBtn btn btn-primary" data-category="programming">Programming</button>
+    <button class="categoryBtn btn btn-primary" data-category="class11">Class 11</button>
+    <button class="categoryBtn btn btn-primary" data-category="class12">Class 12</button>
+    <button class="categoryBtn btn btn-primary" data-category="neet">NEET</button>
+    <button class="categoryBtn btn btn-primary" data-category="webdev">Web Development</button>
+    <button class="categoryBtn btn btn-primary" data-category="appdev">App Development</button>
+    <button class="categoryBtn btn btn-primary" data-category="language">Programming Languages</button>
+    <!-- Add more buttons for additional categories if needed -->
+  </div>
+
+  <ul id="linkList"></ul>
+  <script src="../../index.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+{
+    "links": [
+        {
+			"name":	"HTML & CSS",
+			"url":	"https://www.pdfiles.net/storage/Books/WebApps-Programming-and-Internet/oreilly.head.first.html.and.css.2nd.edition.sep.2012.isbn.0596159900.pdf",
+			"categories":	["books", "oreilly"],
+			"image": ""
+		},
+		{
+			"name":	"JavaScript",
+			"url":	"https://aaronyeo.org/books_/JavaScript/Eric%20T.%20Freeman,%20Elisabeth%20Robson%20-%20Head%20First%20JavaScript%20Programming_%20A%20Brain-Friendly%20Guide-O%E2%80%99Reilly%20Media%20(2014).pdf",
+			"categories":	["books", "oreilly"],
+			"image": ""
+		},
+		{
+			"name":	"SQL",
+			"url":	"https://theswissbay.ch/pdf/Gentoomen%20Library/Databases/O%27Reilly%20Head%20First%20SQL.pdf",
+			"categories":	["books", "oreilly", "programming"],
+			"image": ""
+		}, {
+			"name":	"C#",
+			"url":	"http://library.southville.edu.ph:8080/jspui/bitstream/123456789/15/1/Head%20First%20C%23.pdf",
+			"categories":	["books", "oreilly", "programming"],
+			"image": ""
+		}, {
+			"name":	"Java",
+			"url":	"https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/4951/Head_First_Java_Second_Edition.pdf",
+			"categories":	["books", "oreilly", "programming"],
+			"image": ""
+		},
+		{
+			"name":	"PHP & MySQL",
+			"url":	"https://dart.dev/guides/language/specifications/DartLangSpec-v2.2.pdf",
+			"categories":	["books", "dart.dev", "programming"],
+			"image": ""
+		}, {
+			"name":	"PHP & MySQL",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcbE66fbBesHk3fC4?e=KUtVLT",
+			"categories":	["books", "oreilly", "programming"],
+			"image": ""
+		}, {
+			"name":	"Web Design",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPca4AgfW7wEwP6VlI?e=Z2cX2w",
+			"categories":	["books", "oreilly", "programming"],
+			"image": ""
+		}, {
+			"name":	"C",
+			"url":	"http://pdvpmtasgaon.edu.in/uploads/dptcomputer/Let%20us%20c%20-%20yashwantkanetkar.pdf",
+			"categories":	["books", "yashwant kanetkar", "programming"],
+			"image": ""
+		}, {
+			"name":	"C++",
+			"url":	"https://bawar.net/data0/books/5eb5cf9ff0044/pdf/let-us-C++-yashwant-kanetkar.pdf",
+			"categories":	["books", "yashwant kanetkar", "programming"],
+			"image": ""
+		}, {
+			"name":	"DSA",
+			"url":	"https://dl.ebooksworld.ir/books/Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf",
+			"categories":	["books", "cormen", "dsa", "programming"],
+			"image": ""
+		},
+		{
+			"name":	"MATHS PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcfvVw2Dr67EY_XUs?e=aTr8TB",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"CHEMISTRY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcfxSGBrUs-k7EAFg?e=YSxw2o",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"CHEMISTRY PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcfeT-FyKGewC2n1s?e=KK4c0k",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"PHYSICS PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcfeT-FyKGewC2n1s?e=KK4c0k",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"PHYSICS PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPccGfaZwHDN2oR1Hs?e=UgrFUO",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"BIOLOGY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQg6cYeSH4Zakqa2?e=FyVUn5",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"INDIAN ECONOMICS DEVELOPMENT (PART 1)",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcfIo2OE_hUwWLujo?e=AJLNFh",
+			"categories":	["class11", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"STATISTICS FOR ECONOMICS (PART 2)",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPceldQhUdiWZ9BN6k?e=FTwYPO",
+			"categories":	["class11", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"ACCOUNTANCY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPceJKFy2rZmuo9Nt4?e=0Ct9wb",
+			"categories":	["class11", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"ACCOUNTANCY PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcd6Qd3GsBrIru1LE?e=L0RAvk",
+			"categories":	["class11", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"MATHS PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQSdfUSt8xWLIzBJ?e=sCubFM",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"MATHS PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQOYcx3A0xh1zdW2?e=5WoESU",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"CHEMISTRY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcdZfpkAB2IXI0PP8?e=3cMXH2",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"CHEMISTRY PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcduMoI1ewpryopcc?e=1xnbWX",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"PHYSICS PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcc5h5UEr6bMs6u4o?e=KzJ4lk",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"PHYSICS PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcdOUyRc5mrtW1tyM?e=Z619Hs",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"BIOLOGY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQk_oVnym9o_J8oT?e=tgeyjw",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"INTRODUCTORY MICRO ECONOMICS",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQAlCA32Ivsz8w6H?e=pVgaJn",
+			"categories":	["class12", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"MACRO ECONOMICS",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQGwQMTPj34e32F4?e=X32aP3",
+			"categories":	["class12", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"ACCOUNTANCY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQbmE4_Kl_DOLEAN?e=yyxvho",
+			"categories":	["class12", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"ACCOUNTANCY PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQJwjdf1drQ8556h?e=3ck9H3",
+			"categories":	["class12", " commerce", "books"],
+			"image": ""
+		}
+    ]
+}
