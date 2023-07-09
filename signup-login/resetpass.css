@@ -34,8 +34,7 @@ body {
     color: var(--color-white);  
     line-height: 1.7;
     background: linear-gradient(to right, #31b8c4,#FCF6FC,#FDDDFE,#FEDDEE);    -ms-overflow-style: none;
-    overflow-y: scroll;
-
+    scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
