@@ -183,13 +183,11 @@ header{
     margin: 1rem 0 2.4rem;
 }
 
-.header-right img{
-    margin-right: 2rem;
-}
 /* Categories*/
 
 .features{
-    background-color: #0b1d52;
+    background: linear-gradient(to right, #31b8c4 0%, #9a8de9, #FEDDEE);    
+    box-shadow: 0 1rem 4em rgba(0 , 0, 0 , 0.3);
     text-align: center;
     border-radius: 1rem;
 }
@@ -208,7 +206,7 @@ header{
 
 .feature{
     margin: 1rem;
-    background-color: var(--color-success);
+    background-color: #89efd9;
     width: 250px;
     height: 250px;
     border-radius: 2rem;
@@ -220,7 +218,7 @@ header{
     z-index: 1;
 }
 .feature-icon{
-    background: var(--color-primary);
+    background: var(--color-success);
     padding: 0.9rem;
     border-radius: 1rem;
 }
@@ -237,6 +235,50 @@ header{
     background: var(--color-bg1-);
 }
 
+/*Courses*/
+
+.courses{
+    margin-top: 10rem;
+}
+
+.courses-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.course{
+    background: #101258;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    width: 400px;
+
+}
+
+.course img{
+    border-radius: 1rem;
+}
+.course:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+    transition: var(--transition);
+    transform: scale3d(1.1,1.1,1.1);
+    color: #000;
+}
+
+.course-info{
+    padding: 2rem;
+}
+
+.courses-info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+.courses-container .course h4,p{
+    color: white;
+}
 
 /*Footer*/
 footer{
