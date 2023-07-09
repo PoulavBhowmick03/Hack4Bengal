@@ -1,0 +1,569 @@
+{
+	"links":	[
+		{
+			"name":	"HTML",
+			"url":	"https://www.youtube.com/watch?v=kUMe1FH4CHE&t=12322s",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "HTML.jpg"
+		}, {
+			"name":	"CSS",
+			"url":	"https://www.youtube.com/watch?v=OXGznpKZ_sA&t=9s",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " brocode"],
+			"image": "CSS.jpg"
+		}, {
+			"name":	"JavaScript",
+			"url":	"https://www.youtube.com/watch?v=8dWL3wF_OMw&t=472s",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " dave gray"],
+			"image": "javascript.jpg"
+		}, {
+			"name":	"ReactJS",
+			"url":	"https://www.youtube.com/watch?v=RVFAyFWO4go",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "reactjs.jpg"
+		}, {
+			"name":	"Vue",
+			"url":	"https://www.youtube.com/watch?v=FXpIoQ_rT_c",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "vue.jpg"
+		}, {
+			"name":	"TypeScript",
+			"url":	"https://www.youtube.com/watch?v=30LWjhZzg50",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "typescript.jpg"
+		}, {
+			"name":	"Angular",
+			"url":	"https://www.youtube.com/watch?v=CGLdH5ORX-Y",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " OctAcademy"],
+			"image": "angular.jpg"
+		}, {
+			"name":	"Material UI",
+			"url":	"https://www.youtube.com/watch?v=Xoz31I1FuiY",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " Javascript Mastery"],
+			"image": "materialui.jpg"
+		}, {
+			"name":	"Bootstrap",
+			"url":	"https://www.youtube.com/watch?v=-qfEOE4vtxE",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "bootstrap.jpg"
+		}, {
+			"name":	"Tailwind CSS",
+			"url":	"https://www.youtube.com/watch?v=ft30zcMlFao",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "tailwind.jpg"
+		}, {
+			"name":	"PHP",
+			"url":	"https://www.youtube.com/watch?v=zZ6vybT1HQs",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " Brocode"],
+			"image": "php.jpg"
+		}, {
+			"name":	"NodeJS",
+			"url":	"https://www.youtube.com/watch?v=f2EqECiTBL8&t=10s",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " Dave Gray"],
+			"image": "nodejs.jpg"
+		},{
+			"name":	"Ruby",
+			"url":	"https://www.youtube.com/watch?v=t_ispmWmdjY",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " fcc"],
+			"image": "ruby.jpg"
+		}, {
+			"name":	"ASP.NET",
+			"url":	"https://www.youtube.com/watch?v=hZ1DASYd9rk",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " fcc"],
+			"image": "asp.net.jpg"
+		}, {
+			"name":	"Python",
+			"url":	"https://www.youtube.com/watch?v=nLRL_NcnK-4",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " fcc"],
+			"image": "python.jpg"
+		}, {
+			"name":	"Java",
+			"url":	"https://www.youtube.com/watch?v=xk4_1vDrzzo",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " Brocode"],
+			"image": "java.jpg"
+		}, {
+			"name":	"Express JS",
+			"url":	"https://www.youtube.com/watch?v=Oe421EPjeBE",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " fcc"],
+			"image": "expressjs.jpg"
+		}, {
+			"name":	"Rust",
+			"url":	"https://www.youtube.com/watch?v=BpPEoZW5IiY",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " fcc"],
+			"image": "rust.jpg"
+		}, {
+			"name":	"Golang",
+			"url":	"https://www.youtube.com/watch?v=un6ZyFkqFKo",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " fcc"],
+			"image": "golang.jpg"
+		}, {
+			"name":	"SQL",
+			"url":	"https://www.youtube.com/watch?v=HXV3zeQKqGY",
+			"categories":	["tutorial" , "programming", "webdev", " db", " fcc"],
+			"image": "sql.jpg"
+		}, {
+			"name":	"MySQL",
+			"url":	"https://www.youtube.com/watch?v=5OdVJbNCSso",
+			"categories":	["tutorial" , "programming", "webdev", " db", " Brocode"],
+			"image": "mysql.jpg"
+		}, {
+			"name":	"MongoDB",
+			"url":	"https://www.youtube.com/watch?v=c2M-rlkkT5o",
+			"categories":	["tutorial" , "programming", "webdev", " db", " Brocode"],
+			"image": "mongodb.jpg"
+		}, {
+			"name":	"Cassandra",
+			"url":	"https://www.youtube.com/watch?v=J-cSy5MeMOA",
+			"categories":	["tutorial" , "programming", "webdev", " db", " fcc"],
+			"image": "cassandra.jpg"
+		}, {
+			"name":	"Neo4j",
+			"url":	"https://www.youtube.com/watch?v=_IgbB24scLI",
+			"categories":	["tutorial" , "programming", "webdev", " db", " fcc"],
+			"image": "neo4j.jpg"
+		}, {
+			"name":	"Azure",
+			"url":	"https://www.youtube.com/watch?v=NKEFWyqJ5XA",
+			"categories":	["tutorial" , "programming", "webdev", " devops", " fcc"],
+			"image": "azure.jpg"
+		}, {
+			"name":	"AWS",
+			"url":	"https://www.youtube.com/watch?v=SOTamWNgDKc",
+			"categories":	["tutorial" , "programming", "webdev", " devops", " fcc"],
+			"image": "aws.jpg"
+		}, {
+			"name":	"Java",
+			"url":	"https://www.youtube.com/watch?v=xk4_1vDrzzo",
+			"categories":	["tutorial" , "programming", "appdev", " android", " Brocode"],
+			"image": "java.jpg"
+		}, {
+			"name":	"Kotlin",
+			"url":	"https://www.youtube.com/watch?v=EExSSotojVI",
+			"categories":	["tutorial" , "programming", "appdev", " android", " fcc"],
+			"image": "kotlin.jpg"
+		}, {
+			"name":	"Android App Dev",
+			"url":	"https://www.youtube.com/watch?v=fis26HvvDII",
+			"categories":	["tutorial" , "programming", "appdev", " android", " fcc"],
+			"image": "android.jpg"
+		}, {
+			"name":	"Swift",
+			"url":	"https://www.youtube.com/watch?v=8Xg7E9shq0U",
+			"categories":	["tutorial" , "programming", "appdev", " ios", " fcc"],
+			"image": "swift.jpg"
+		}, {
+			"name":	"React Native",
+			"url":	"https://www.youtube.com/watch?v=obH0Po_RdWk",
+			"categories":	["tutorial" , "programming", "appdev", " cross", " fcc"],
+			"image": "reactnative.jpg"
+		}, {
+			"name":	"Unity",
+			"url":	"https://www.youtube.com/watch?v=gB1F9G0JXOo&t=15144s",
+			"categories":	["tutorial" , "programming", "appdev", " cross", " fcc"],
+			"image": "unity.jpg"
+		}, {
+			"name":	"Flutter",
+			"url":	"https://www.youtube.com/watch?v=VPvVD8t02U8",
+			"categories":	["tutorial" , "programming", "appdev", " cross", " fcc"],
+			"image": "flutter.jpg"
+		}, {
+			"name":	"Figma (UI)",
+			"url":	"https://www.youtube.com/watch?v=jwCmIBJ8Jtc",
+			"categories":	["tutorial" , "programming", "design", " UI/UX", " fcc"],
+			"image": "figmaui.jpg"
+		}, {
+			"name":	"Figma (UX)",
+			"url":	"https://www.youtube.com/watch?v=kbZejnPXyLM&t=3s",
+			"categories":	["tutorial" , "programming", "design", " UI/UX", " biol"],
+			"image": "figmaux.jpg"
+		}, {
+			"name":	"C",
+			"url":	"https://www.youtube.com/watch?v=KJgsSFOSQv0",
+			"categories":	["tutorial" , "programming", "language", " fcc"],
+			"image": "c.jpg"
+		}, {
+			"name":	"C++",
+			"url":	"https://www.youtube.com/watch?v=8jLOx1hD3_o&t=13250s",
+			"categories":	["tutorial" , "programming", "language", " fcc"],
+			"image": "c++.jpg"
+		}, {
+			"name":	"C#",
+			"url":	"https://www.youtube.com/watch?v=wxznTygnRfQ",
+			"categories":	["tutorial" , "programming", "language", " Brocode"],
+			"image": "csharp.jpg"
+		}, {
+			"name":	"Java",
+			"url":	"https://www.youtube.com/watch?v=xk4_1vDrzzo",
+			"categories":	["tutorial" , "programming", "language", " Brocode"],
+			"image": "java.jpg"
+		}, {
+			"name":	"Python",
+			"url":	"https://www.youtube.com/watch?v=nLRL_NcnK-4",
+			"categories":	["tutorial" , "programming", "language", " fcc"],
+			"image": "python.jpg"
+		}, {
+			"name":	"Assembly",
+			"url":	"https://www.youtube.com/watch?v=gfmRrPjnEw4",
+			"categories":	["tutorial" , "programming", "language", " fcc"],
+			"image": "assembly.jpg"
+		}, {
+			"name":	"Git + Github",
+			"url":	"https://www.youtube.com/watch?v=apGV9Kg7ics&t=912s",
+			"categories":	["tutorial" , "programming", "utility", " kunal"],
+			"image": "git.jpg"
+		}, {
+			"name":	"Google Cloud Platform",
+			"url":	"https://www.youtube.com/watch?v=IUU6OR8yHCc",
+			"categories":	["tutorial" , "programming", "utility", " edureka"],
+			"image": "gcp.jpg"
+		}, {
+			"name":	"Firebase",
+			"url":	"https://www.youtube.com/watch?v=fgdpvwEWJ9M",
+			"categories":	["tutorial" , "programming", "utility", " fcc"],
+			"image": "firebase.jpg"
+		},
+		{
+			"name":	"Chemistry",
+			"url":	"https://www.youtube.com/watch?v=Qy0Q_AYs63Y&list=PLF_7kfnwLFCFByfL28A5RbN7Bee-DLoX4",
+			"categories":	["tutorial", "class11","science"],
+			"image": "chemistry.jpg"
+		}, {
+			"name":	"Physics",
+			"url":	"https://www.youtube.com/watch?v=e3yRZaynPE0&list=PLF_7kfnwLFCEbuqbwU9hyghx5vHpaBPRo",
+			"categories":	["tutorial", "class11","science"],
+			"image": "physics.jpg"
+		}, {
+			"name":	"Biology",
+			"url":	"https://www.youtube.com/watch?v=2SumjEtsmCE&list=PLh-QgC0HI5U5FKDB-_7qyQPBZXqSAxQCx",
+			"categories":	["tutorial", "class11","science"],
+			"image": "biology.jpg"
+		}, {
+			"name":	"Maths",
+			"url":	"https://www.youtube.com/watch?v=XbCBbJncfGE&list=PLzOy2VMovj_DdBiDUW_RNPLvudpQmrVKB",
+			"categories":	["tutorial", "class11","science"],
+			"image": "maths.jpg"
+		}, {
+			"name":	"Accountancy",
+			"url":	"https://www.youtube.com/watch?v=JnTLU0vTVr0&list=PLAhomlwJUwWbYxyYJim7CQyFJE0bUqdof",
+			"categories":	["tutorial", "class11","commerce"],
+			"image": "accountancy.jpg"
+		}, {
+			"name":	"Business, Trade and Commerce",
+			"url":	"https://www.youtube.com/watch?v=6rj3r6Li1rI&list=PLAhomlwJUwWZKDaDmTvSvl_mmsmbXu8c2",
+			"categories":	["tutorial", "class11","commerce"],
+			"image": "bst.jpg"
+		},
+		{
+			"name":	"Biology",
+			"url":	"https://www.youtube.com/watch?v=Ohn8s4sGxzs&list=PL2xF3HCNxGM80XU8cND2E31mEYv6Fx41H",
+			"categories":	["tutorial", "class12","science", " term 1"],
+			"image": "biology1.jpg"
+		}, {
+			"name":	"Chemistry",
+			"url":	"https://www.youtube.com/watch?v=xUbUSYzSOgM",
+			"categories":	["tutorial", "class12","science", " term 1"],
+			"image": "chemistry1.jpg"
+		}, {
+			"name":	"Physics",
+			"url":	"https://www.youtube.com/watch?v=mz4MlQ-L9U4&list=PL2xF3HCNxGM-IO4d7hhE2z4PejnOUcwiV",
+			"categories":	["tutorial", "class12","science", " term 1"],
+			"image": "physics1.jpg"
+		},  {
+			"name":	"Maths",
+			"url":	"https://www.youtube.com/watch?v=k0HiSD2gTR0&list=PL2xF3HCNxGM_Tgt9ZC3tJXr_O5sBJ2qQZ",
+			"categories":	["tutorial", "class12","science", " term 1"],
+			"image": "maths1.jpg"
+		}, {
+			"name":	"English",
+			"url":	"https://www.youtube.com/watch?v=1I6YCBLsh-c&list=PL2xF3HCNxGM9txE38ADxZ-BuKwC1Uccjy",
+			"categories":	["tutorial", "class12","science", " term 1"],
+			"image": "english.jpg"
+		}, {
+			"name":	"Biology",
+			"url":	"https://www.youtube.com/watch?v=FlbQKVnbBP8&list=PL2xF3HCNxGM_oZZkPf0WpIZd6c1gaGPU6",
+			"categories":	["tutorial", "class12","science", " term 2"],
+			"image": "biology2.jpg"
+		}, {
+			"name":	"Chemistry",
+			"url":	"https://www.youtube.com/watch?v=FlbQKVnbBP8&list=PL2xF3HCNxGM_AOHWjoMt4oRPvRiwKM8BY",
+			"categories":	["tutorial", "class12","science", " term 2"],
+			"image": "chemistry2.jpg"
+		}, {
+			"name":	"Physics",
+			"url":	"https://www.youtube.com/watch?v=FlbQKVnbBP8&list=PL2xF3HCNxGM_fiBO8tvIXLf6HdY3ELqH6",
+			"categories":	["tutorial", "class12","science", " term 2"],
+			"image": "chemistry2.jpg"
+		}, {
+			"name":	"Maths",
+			"url":	"https://www.youtube.com/watch?v=FlbQKVnbBP8&list=PL2xF3HCNxGM9_yFUKJvmnX7JLtWtzxr_W",
+			"categories":	["tutorial", "class12","science", " term 2"],
+			"image": "chemistry2.jpg"
+		}, {
+			"name":	"English",
+			"url":	"https://www.youtube.com/watch?v=FlbQKVnbBP8&list=PL2xF3HCNxGM9GbbTjU5_HPm0ZK1rtZJeQ",
+			"categories":	["tutorial", "class12","science", " term 2"],
+			"image": "chemistry2.jpg"
+		}, {
+			"name":	"Economics",
+			"url":	"https://www.youtube.com/watch?v=t9FXaVfoMT4&list=PLAhomlwJUwWb6VOAE0Cg5tXfXEm3AXdaC",
+			"categories":	["tutorial", "class12","commerce"],
+			"image": "economics.jpg"
+		}, {
+			"name":	"Business Studies",
+			"url":	"https://www.youtube.com/watch?v=lcxXD17DAuw&list=PLAhomlwJUwWZQRJOX9WtkXvSLpj8gbMvh",
+			"categories":	["tutorial", "class12","commerce"],
+			"image": "bst1.jpg"
+		}, {
+			"name":	"Accountancy",
+			"url":	"https://www.youtube.com/watch?v=n5Av5Fbpea4&list=PLAhomlwJUwWbzSS0RgiVarP5rCvdXdm2g",
+			"categories":	["tutorial", "class12","commerce"],
+			"image": "accountancy1.jpg"
+		}, {
+			"name":	"Core Maths",
+			"url":	"https://www.youtube.com/watch?v=GL1txMHDfgw&list=PLAhomlwJUwWayqBDMaOSXtfttlIoV1XXk",
+			"categories":	["tutorial", "class12","commerce"],
+			"image": "coremaths.jpg"
+		}, {
+			"name":	"Applied Maths",
+			"url":	"https://www.youtube.com/watch?v=FyckVkq5RiU&list=PLAhomlwJUwWbZnie1cRRP9AA3Hi5-Icj4",
+			"categories":	["tutorial", "class12","commerce"],
+			"image": "appmaths.jpg"
+		},
+		{
+			"name":	"Physics Class 11",
+			"url":	"https://www.youtube.com/watch?v=RT8t0M7WiJ8",
+			"categories":	["tutorial", "jee","class 11"],
+			"image": "physc11.jpg"
+		}, {
+			"name":	"Physics Class 12",
+			"url":	"https://www.youtube.com/watch?v=zlC8QAG2mCc",
+			"categories":	["tutorial", "jee","class12"],
+			"image": "physc12.jpg"
+		}, {
+			"name":	"Maths Class 11",
+			"url":	"https://www.youtube.com/watch?v=jS_dmSm-o1c",
+			"categories":	["tutorial", "jee","class11"],
+			"image": "mc11.jpg"
+		}, {
+			"name":	"Maths Class 12",
+			"url":	"https://www.youtube.com/watch?v=whSSWH8QPYY",
+			"categories":	["tutorial", "jee","class12"],
+			"image": "mc12.jpg"
+		}, {
+			"name":	"Physical Chemistry",
+			"url":	"https://www.youtube.com/watch?v=H8YybnAnI3E",
+			"categories":	["tutorial", "jee","physical"],
+			"image": "physchem.jpg"
+		}, {
+			"name":	"Organic Chemistry",
+			"url":	"https://www.youtube.com/watch?v=kEUlG3_Ouxs",
+			"categories":	["tutorial", "jee","organic"],
+			"image": "orgchem.jpg"
+		}, {
+			"name":	"Inorganic Chemistry",
+			"url":	"https://www.youtube.com/watch?v=UvpBv7oljZU",
+			"categories":	["tutorial", "jee","inorganic"],
+			"image": "inchem.jpg"
+		},
+		{
+			"name":	"Physics Class 11",
+			"url":	"https://www.youtube.com/watch?v=6SNWCB4TB0o&t=36731s",
+			"categories":	["tutorial", "neet", "class 11"],
+			"image": "physics2.jpg"
+		}, {
+			"name":	"Physics Class 12",
+			"url":	"https://www.youtube.com/watch?v=HAPnutGsfLs",
+			"categories":	["tutorial", "neet", "class12"],
+			"image": "physics3.jpg"
+		}, {
+			"name":	"Botany (Biology)",
+			"url":	"https://www.youtube.com/watch?v=cdFephxctSs",
+			"categories":	["tutorial", "neet", "botany"],
+			"image": "botany.jpg"
+		}, {
+			"name":	"Zoology (Biology)",
+			"url":	"https://www.youtube.com/watch?v=13-dpxqtFKQ",
+			"categories":	["tutorial", "neet", "zoology"],
+			"image": "zoo.jpg"
+		}, {
+			"name":	"Organic Chemistry",
+			"url":	"https://www.youtube.com/watch?v=ShALRAmCSu0",
+			"categories":	["tutorial", "neet", "organic"],
+			"image": "organic.jpg"
+		}, {
+			"name":	"Physical Chemistry",
+			"url":	"https://www.youtube.com/watch?v=gQ0Ho4vu0HA",
+			"categories":	["tutorial", "neet", "physical"],
+			"image": "physical.jpg"
+		}, {
+			"name":	"Inorganic Chemistry",
+			"url":	"https://www.youtube.com/watch?v=M1jG3hxJOUU",
+			"categories":	["tutorial", "neet", "inorganic"],
+			"image": "inorganic.jpg"
+		},
+		{
+			"name":	"HTML & CSS",
+			"url":	"https://www.pdfiles.net/storage/Books/WebApps-Programming-and-Internet/oreilly.head.first.html.and.css.2nd.edition.sep.2012.isbn.0596159900.pdf",
+			"categories":	["books", "oreilly"],
+			"image": ""
+		},
+		{
+			"name":	"JavaScript",
+			"url":	"https://aaronyeo.org/books_/JavaScript/Eric%20T.%20Freeman,%20Elisabeth%20Robson%20-%20Head%20First%20JavaScript%20Programming_%20A%20Brain-Friendly%20Guide-O%E2%80%99Reilly%20Media%20(2014).pdf",
+			"categories":	["books", "oreilly"],
+			"image": ""
+		},
+		{
+			"name":	"SQL",
+			"url":	"https://theswissbay.ch/pdf/Gentoomen%20Library/Databases/O%27Reilly%20Head%20First%20SQL.pdf",
+			"categories":	["books", "oreilly"],
+			"image": ""
+		}, {
+			"name":	"C#",
+			"url":	"http://library.southville.edu.ph:8080/jspui/bitstream/123456789/15/1/Head%20First%20C%23.pdf",
+			"categories":	["books", "oreilly"],
+			"image": ""
+		}, {
+			"name":	"Java",
+			"url":	"https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/4951/Head_First_Java_Second_Edition.pdf",
+			"categories":	["books", "oreilly"],
+			"image": ""
+		},
+		{
+			"name":	"PHP & MySQL",
+			"url":	"https://dart.dev/guides/language/specifications/DartLangSpec-v2.2.pdf",
+			"categories":	["books", "dart.dev"],
+			"image": ""
+		}, {
+			"name":	"PHP & MySQL",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcbE66fbBesHk3fC4?e=KUtVLT",
+			"categories":	["books", "oreilly"],
+			"image": ""
+		}, {
+			"name":	"Web Design",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPca4AgfW7wEwP6VlI?e=Z2cX2w",
+			"categories":	["books", "oreilly"],
+			"image": ""
+		}, {
+			"name":	"C",
+			"url":	"http://pdvpmtasgaon.edu.in/uploads/dptcomputer/Let%20us%20c%20-%20yashwantkanetkar.pdf",
+			"categories":	["books", "yashwant kanetkar"],
+			"image": ""
+		}, {
+			"name":	"C++",
+			"url":	"https://bawar.net/data0/books/5eb5cf9ff0044/pdf/let-us-C++-yashwant-kanetkar.pdf",
+			"categories":	["books", "yashwant kanetkar"],
+			"image": ""
+		}, {
+			"name":	"DSA",
+			"url":	"https://dl.ebooksworld.ir/books/Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf",
+			"categories":	["books", "cormen", "dsa"],
+			"image": ""
+		},
+		{
+			"name":	"MATHS PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcfvVw2Dr67EY_XUs?e=aTr8TB",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"CHEMISTRY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcfxSGBrUs-k7EAFg?e=YSxw2o",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"CHEMISTRY PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcfeT-FyKGewC2n1s?e=KK4c0k",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"PHYSICS PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcfeT-FyKGewC2n1s?e=KK4c0k",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"PHYSICS PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPccGfaZwHDN2oR1Hs?e=UgrFUO",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"BIOLOGY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQg6cYeSH4Zakqa2?e=FyVUn5",
+			"categories":	["class11", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"INDIAN ECONOMICS DEVELOPMENT (PART 1)",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcfIo2OE_hUwWLujo?e=AJLNFh",
+			"categories":	["class11", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"STATISTICS FOR ECONOMICS (PART 2)",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPceldQhUdiWZ9BN6k?e=FTwYPO",
+			"categories":	["class11", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"ACCOUNTANCY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPceJKFy2rZmuo9Nt4?e=0Ct9wb",
+			"categories":	["class11", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"ACCOUNTANCY PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcd6Qd3GsBrIru1LE?e=L0RAvk",
+			"categories":	["class11", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"MATHS PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQSdfUSt8xWLIzBJ?e=sCubFM",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"MATHS PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQOYcx3A0xh1zdW2?e=5WoESU",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"CHEMISTRY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcdZfpkAB2IXI0PP8?e=3cMXH2",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"CHEMISTRY PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcduMoI1ewpryopcc?e=1xnbWX",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"PHYSICS PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcc5h5UEr6bMs6u4o?e=KzJ4lk",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"PHYSICS PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcdOUyRc5mrtW1tyM?e=Z619Hs",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"BIOLOGY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQk_oVnym9o_J8oT?e=tgeyjw",
+			"categories":	["class12", "science", "books"],
+			"image": ""
+		}, {
+			"name":	"INTRODUCTORY MICRO ECONOMICS",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQAlCA32Ivsz8w6H?e=pVgaJn",
+			"categories":	["class12", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"MACRO ECONOMICS",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQGwQMTPj34e32F4?e=X32aP3",
+			"categories":	["class12", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"ACCOUNTANCY PART 1",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQbmE4_Kl_DOLEAN?e=yyxvho",
+			"categories":	["class12", " commerce", "books"],
+			"image": ""
+		}, {
+			"name":	"ACCOUNTANCY PART 2",
+			"url":	"https://1drv.ms/b/s!Ao96R4iFjyPcgQJwjdf1drQ8556h?e=3ck9H3",
+			"categories":	["class12", " commerce", "books"],
+			"image": ""
+		}
+	]
+}
