@@ -10,22 +10,6 @@
 }
 
 :root{
-    --color-primary: #020030;
-    --color-success: #0a8572;
-    --color-warning: #f7c94b;
-    --color-danger: #e08593;
-    --color-danger-variant: rgba(247, 88, 66, 0.4);
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.7);
-    --color-black: #000;
-    --color-bg: linear-gradient(to right, #15182d 0%, #0d063c 100%);
-    --color-bg1: #241263; 
-    --color-bg2: #424890;
-
-    --container-width-lg: 80%;
-    --container-width-md: 90%;
-    --container-width-sm: 94%;
-
     --transition:all 400ms ease;
 }
 
