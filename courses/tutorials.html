@@ -28,7 +28,7 @@
             var listItem = $('<li class="card feature"></li>');
             var linkText = $('<a></a>').attr('href', link.url).text(link.name);
             // ADD IMG ELEMENT WITH SRC='LINK.IMG' 
-            var linkImg = $('<img></img>').attr('src', "../../images/thumbnails/"+link.image)
+            var linkImg = $('<img></img>').attr('src', "./image/"+link.image)
             listItem.append(linkText);
             listItem.append(linkImg);
             $('#linkList').append(listItem);
@@ -73,17 +73,10 @@
       </ul>
   </div>
   </nav>
-  <h1 id="heading">Tutorials</h1>
+  <h1 id="heading">Courses</h1>
 
   <div class="filter-btn">
-    <button class="categoryBtn btn btn-primary" data-category="all">All</button>
-    <button class="categoryBtn btn btn-primary" data-category="programming">Programming</button>
-    <button class="categoryBtn btn btn-primary" data-category="class11">Class 11</button>
-    <button class="categoryBtn btn btn-primary" data-category="class12">Class 12</button>
-    <button class="categoryBtn btn btn-primary" data-category="neet">NEET</button>
-    <button class="categoryBtn btn btn-primary" data-category="webdev">Web Development</button>
-    <button class="categoryBtn btn btn-primary" data-category="appdev">App Development</button>
-    <button class="categoryBtn btn btn-primary" data-category="language">Programming Languages</button>
+
     <!-- Add more buttons for additional categories if needed -->
   </div>
 
