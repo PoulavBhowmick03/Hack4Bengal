@@ -2,7 +2,7 @@
 
 window.addEventListener("scroll", () => {
     document.querySelector("nav").classList.toggle
-    ('window-scroll', window.scrollY > 150)})
+    ('window-scroll', window.scrollY > 10)})
 
 
     //show/hide faqs

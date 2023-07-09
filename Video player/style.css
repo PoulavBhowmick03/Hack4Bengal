@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 }
 
 .container {
-    margin: 0 auto;
+    margin-top: 5rem;    
     display: flex;
     justify-content: center;
     align-items: center;

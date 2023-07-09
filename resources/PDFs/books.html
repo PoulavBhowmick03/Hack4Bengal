@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>PDF Files</title>
+  <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+  <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
@@ -48,14 +52,24 @@
 <body>
   <nav>
     <div class="container nav-container">
-      <a href="index.html"><h4>Website</h4></a>
+      <a href="../../index.html"><h4>Website</h4></a>
       <ul class="nav-menu">
-        <li><a href="">About</a></li>
-        <li><div class="current"><p class="current-tab">Courses</p></div></li>
-        <li><a href="./resources.html">Resources</a></li>
+        <li><a href="../about/about.html">About</a></li>
+
+        <li><a href="../../courses/courses.html">Courses</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Resources <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="../resources/PDFs/books.html">Study Materials</a></li>
+            <li><a href="../tutorials/tutorials.html">Tutorials</a></li>
+          </ul>
+        </li>          
+        <li><a href="./resources.html">Initiative</a></li>
         <li><a href="">Quiz</a></li>
         <li><a href="">Contact</a></li>
-        <li><a href=""><i class="fa-solid fa-right-to-bracket"></i></a></li>
+        <li id="loginButton" style="display: none;"><a href="./signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+
+        <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
       </ul>
   </div>
   </nav>
