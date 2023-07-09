@@ -321,6 +321,14 @@ nav button {
     }
 }
 
+.fa-solid{
+    margin-right: 1.5rem;
+}
+
+.fa-solid:hover{
+    cursor: pointer;
+    color: #182075;
+}
 
 /*--new page---*/
 
