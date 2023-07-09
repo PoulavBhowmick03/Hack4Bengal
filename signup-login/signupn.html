@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up and Profile Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 14px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up and Profile Information</h2>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn" value="Sign Up">
+      </div>
+      <p class="message" id="errorMessage"></p>
+    </form>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+        apiKey: "AIzaSyDxUEHnP1aN54ULVpaHcZSukaBrLu_1Qdw",
+        authDomain: "insightiq-afdde.firebaseapp.com",
+        projectId: "insightiq-afdde",
+      // ...
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    var db = firebase.firestore();
+
+    // Add sign-up form submit event listener
+    document.getElementById("signupForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get input values
+      var username = document.getElementById("username").value;
+      var name = document.getElementById("name").value;
+      var phoneNumber = document.getElementById("phoneNumber").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      // Create user with email and password authentication
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then(function(userCredential) {
+          var user = userCredential.user;
+
+          // Store additional user profile information in Firestore
+          db.collection("users").doc(user.uid).set({
+            username: username,
+            name: name,
+            phoneNumber: phoneNumber
+          })
+          .then(function() {
+            // Redirect to dashboard page or perform any other actions
+            window.location.href = "../index.html";
+          })
+          .catch(function(error) {
+            // Handle Firestore errors
+            document.getElementById("errorMessage").textContent = error.message;
+          });
+        })
+        .catch(function(error) {
+          // Handle sign-up errors
+          document.getElementById("errorMessage").textContent = error.message;
+        });
+    });
+  </script>
+</body>
+</html>
