@@ -117,7 +117,7 @@
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body onload="checkUserStatus()">
     <!---navigation start-->
     <!--Navbar-->
     <nav>
@@ -137,9 +137,9 @@
             <li><a href="./resources.html">Initiative</a></li>
             <li><a href="">Quiz</a></li>
             <li><a href="">Contact</a></li>
-            <li id="loginButton" style="display: none;"><a href="./signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+            <li id="loginButton" style="display: none;"><a href="../signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
 
-            <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
+          <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
             </ul>
       </div>
       </nav>
@@ -361,6 +361,8 @@
       });
     });
     </script> -->
+    <script src="index.js"></script>
+    
     <script src="index.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
