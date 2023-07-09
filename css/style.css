@@ -251,14 +251,11 @@ header{
     background: #101258;
     text-align: center;
     border: 1px solid transparent;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     width: 400px;
 
 }
 
-.course img{
-    border-radius: 1rem;
-}
 .course:hover{
     background: transparent;
     border-color: var(--color-primary);
@@ -276,9 +273,49 @@ header{
     font-size: 0.9rem;
 }
 
-.courses-container .course h4,p{
-    color: white;
+/*           FAQs            */
+
+.faqs{
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);   
 }
+
+
+.faq{
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-self: center;
+    gap: 1.9rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    border-radius: 1rem;   
+
+}
+
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+.faq-icon{
+    margin-top: 1.1rem;
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
+.faq p{
+    margin-top: 1rem;
+    display: none;
+}
+
+.faq.open p{
+    display: block;
+    transition: var(--transition);
+}
+
 
 /*Footer*/
 footer{
