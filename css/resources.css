@@ -33,7 +33,9 @@
   width: auto;
   height: auto;
 }
-
+.feature:hover{
+  transform: scale3d(1.1,1.1,1.1);
+}
 .filter-btn {
   display: flex;
   justify-content: space-between;
