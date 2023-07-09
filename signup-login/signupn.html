@@ -1,96 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sign Up and Profile Information</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="tel"] {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 8px 12px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: #45a049;
-    }
-
-    .message {
-      margin-top: 20px;
-      font-size: 14px;
-      color: red;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignUp Form</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/d1c523657e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./navbar.css" />
+  <link rel="stylesheet" href="./signup.css">
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  <script src="./js/Landingpage.js"></script>
+  <script src="./js/firebaseConfig.js"></script>
+  <link rel="stylesheet" href="css/signup.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/signup.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <h2>Sign Up and Profile Information</h2>
-    <form id="signupForm">
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="phoneNumber">Phone Number:</label>
-        <input type="tel" id="phoneNumber" name="phoneNumber" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <div class="form-group">
-        <input type="submit" class="btn" value="Sign Up">
-      </div>
-      <p class="message" id="errorMessage"></p>
-    </form>
-  </div>
+  <!-- Navbar -->
+  <nav>
+    <div class="container nav-container">
+      <a href="../index.html"><h4>Website</h4></a>
+      <ul class="nav-menu">
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../courses.html">Courses</a></li>
+        <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../resources.html">Initiative</a></li>
+        <li><a href="">Quiz</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <!-- Sign-Up -->
+  <section>
+    <div class="login-box">
+      <form id="signup-form">
+        <h2>Sign-Up</h2>
+        <div class="input-box">
+          <span class="icon"><i class="bx bxs-envelope"></i></span>
+          <input type="text" id="name" required />
+          <label>Name</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="bx bxs-envelope"></i></span>
+          <input type="email" id="email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+          <input type="password" id="password" required />
+          <label>Password</label>
+        </div>
+        <div class="remember-forget">
+          <label><input type="checkbox" />Remember me</label>
+        </div>
+        <button type="submit">Sign up</button>
+        <div class="register-link">
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+        <p class="message" id="errorMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer1">
+        <a href="index.html" class="footer-logo"><h4>Website</h4></a>
+        <p>Lorem Ipsum Dolor sir amet constectur, elit temporibus, qui.</p>
+      </div>
+
+      <div class="footer2">
+        <h4>Quicklinks</h4>
+        <ul class="quicklinks">
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="index.html">Courses</a></li>
+          <li><a href="index.html">Doubts</a></li>
+          <li><a href="index.html">Community</a></li>
+        </ul>
+      </div>
+
+      <div class="footer3">
+        <h4>Privacy</h4>
+        <ul class="privacy">
+          <li><a href="#">Our Goal</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer4">
+        <h4>Contact Us</h4>
+        <div>
+          <p>+91 12345 67890</p>
+          <p>amrashobairaja@gmail.com</p>
+        </div>
+
+        <ul class="socials">
+          <li>
+            <a href="https://github.com/PoulavBhowmick03/Hack4Bengal"
+              ><i class="fa-brands fa-github"></i></a
+            >
+          </li>
+          <li>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook"></i></a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter"></i></a
+            >
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <small>Copyright &copy; Poulav PGT Sagar Binayak</small>
+    </div>
+  </footer>
+
+  <!-- JavaScript code -->
   <script>
-    // Initialize Firebase
     var firebaseConfig = {
         apiKey: "AIzaSyDxUEHnP1aN54ULVpaHcZSukaBrLu_1Qdw",
         authDomain: "insightiq-afdde.firebaseapp.com",
@@ -99,41 +142,42 @@
     };
     firebase.initializeApp(firebaseConfig);
 
-    var db = firebase.firestore();
+    const signupForm = document.querySelector('#signup-form');
+    const nameInput = document.querySelector('#name');
+    const emailInput = document.querySelector('#email');
+    const passwordInput = document.querySelector('#password');
 
-    // Add sign-up form submit event listener
-    document.getElementById("signupForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent form submission
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
 
-      // Get input values
-      var username = document.getElementById("username").value;
-      var name = document.getElementById("name").value;
-      var phoneNumber = document.getElementById("phoneNumber").value;
-      var email = document.getElementById("email").value;
-      var password = document.getElementById("password").value;
+      const name = nameInput.value;
+      const email = emailInput.value;
+      const password = passwordInput.value;
 
-      // Create user with email and password authentication
-      firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then(function(userCredential) {
-          var user = userCredential.user;
-
-          // Store additional user profile information in Firestore
-          db.collection("users").doc(user.uid).set({
-            username: username,
+      // Create user with email and password
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password)
+        .then(() => {
+          // Store additional user data in Firestore
+          const user = firebase.auth().currentUser;
+          const uid = user.uid;
+          
+          firebase.firestore().collection('users').doc(uid).set({
             name: name,
-            phoneNumber: phoneNumber
+            email: email
           })
-          .then(function() {
-            // Redirect to dashboard page or perform any other actions
+          .then(() => {
+            
             window.location.href = "../index.html";
           })
-          .catch(function(error) {
-            // Handle Firestore errors
+          .catch((error) => {
+            // Error storing profile data
             document.getElementById("errorMessage").textContent = error.message;
           });
         })
-        .catch(function(error) {
-          // Handle sign-up errors
+        .catch((error) => {
+          // Error creating user
           document.getElementById("errorMessage").textContent = error.message;
         });
     });
