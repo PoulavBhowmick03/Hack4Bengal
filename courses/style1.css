@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Chakra+Petch&family=Kanit:wght@300&family=Maven+Pro:wght@400;500&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins&family=Quicksand:wght@700&family=Roboto+Slab&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #020030;
+    --color-success: #0a8572;
+    --color-warning: #f7c94b;
+    --color-danger: #e08593;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: linear-gradient(to right, #15182d 0%, #0d063c 100%);
+    --color-bg1: #241263; 
+    --color-bg2: #424890;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition:all 400ms ease;
+
+    /* GRADIENTS */
+    --color-div: rgba(0, 140, 255, 0.303);
+}
+
+body {
+    font-family: "Poppins", sans-serif; 
+    color: var(--color-white);  
+    line-height: 1.7;
+    background: linear-gradient(to right, #31b8c4,#FCF6FC,#FDDDFE,#FEDDEE);    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: var(--container-width-1g); 
+    margin: 0 auto;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section h2 {
+    text-align: center; 
+    margin-bottom: 4rem;
+    }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+    }
+    
+h1{ 
+    font-size: 2.4rem
+}
+
+h2{
+   font-size: 2rem; 
+}
+
+h3{ 
+    font-size: 1.6rem
+}
+
+h4{
+   font-size: 1.3rem; 
+}
+
+a{
+    color: var(--color-black);
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit:cover;
+}
+
+.btn {
+    display: inline-block; 
+    background: var(--color-white); 
+    color: var(--color-black); 
+    padding: 1rem 2rem; 
+    border: 1px solid transparent; 
+    font-weight: 500; 
+    transition: var(--transition);
+    border-radius: 2rem;
+}
+    
+.btn:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-primary{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+
+/* Navbar */
+
+nav{
+    color: #000;
+    background-color: transparent;
+    margin-left: -3vw;
+    left: 2rem;
+    width: 102vw;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    z-index:11;   
+}
+
+/* Change Navbar on scroll */
+
+.window-scroll{
+    background-color: #d8cece;
+    box-shadow: 0 1rem 4em rgba(0 , 0, 0 , 0.3);
+    transition: var(--transition);
+}
+.nav-container {
+    margin-top: 0.7rem;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem ;
+}
+.nav-menu a{
+    font-size: 1.2rem;
+    transition: var(--transition) ;
+}
+
+.nav-menu a:hover{
+    color: #7881e0;
+}
+/* End of nav scroll effect */
+/* Header */
+header{
+    width: 96vw;
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+    height: 90vh;
+    margin-bottom: 5rem
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 400px;
+}
+
+.header-left p{
+    margin: 1rem 0 2.4rem;
+}
+/* Course Details */
+.bground{
+    background:var(--color-div);    
+    box-shadow: 0 1rem 3em rgba(0 , 0, 0 , 0.2);
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    width: 95vw;
+    height:75vh;
+    z-index: -1;
+    padding: 2rem;
+    border-radius: 1rem;
+    
+}
+.header-right img{
+    border-radius: 2rem;
+
+}
+.image{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 50vh;
+    margin-top: 3.5rem; ;
+    margin-right: 3rem;
+}
+.courseD{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    height: 400px;
+    background: var(--color-div);    
+    box-shadow: 0 1rem 3em rgba(0 , 0, 0 , 0.2);
+    width: 95vw;
+}
+
+.details-course,
+.teachers{
+    font-size: 20px;
+    line-height: 3rem;
+    margin: 2rem;
+}
+.teachers{
+    text-align: center;
+    line-height: 1.4rem;
+}
+.teachers .names{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teachers .names .details-teachers img{
+    width: 80px;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+}
+.teachers .names .details-teachers .photo2{
+    margin-left: 2rem;
+}
+/* Course Details */
+/*Footer*/
+footer{
+    color: var(--color-black);
+    padding-top: 25rem;
+    font-size: 0.9rem;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.footer-container> div h4{
+    margin-bottom: 1.3rem;
+}
+
+ .footer1 p{
+    margin: 0 0 2rem;
+ }
+
+ footer ul li{
+    margin-bottom: 0.7rem;
+ }
+
+ footer ul li a:hover{
+    text-decoration: underline;
+ }
+
+ .socials{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+ }
+
+ .copyright{
+    margin-top: 5rem;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-bg2);
+}
