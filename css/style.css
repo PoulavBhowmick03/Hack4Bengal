@@ -365,3 +365,7 @@ footer{
     border-top: 1px solid var(--color-bg2);
 }
 /*Footer ends*/
+/* logout */
+.logout{
+    font-size: 1.2rem;
+}
