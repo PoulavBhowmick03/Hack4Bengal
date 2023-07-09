@@ -403,17 +403,13 @@ footer{
   }
   
   .logout{
-    margin-left: -1rem;
     text-align: center;
-    background: #e11818;
     border-radius: 3rem;
-    width: 90px;
     padding: 0.1rem;
-    color: rgb(255, 231, 231);
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 .logout:hover{
-    background: #ff401e;
     color: rgb(0, 0, 0);
     transition: var(--transition);
 }
