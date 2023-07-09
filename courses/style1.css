@@ -222,6 +222,10 @@ header{
     box-shadow: 0 1rem 3em rgba(0 , 0, 0 , 0.2);
     width: 95vw;
 }
+#order{
+    list-style: disc;
+
+}
 
 .details-course,
 .teachers{

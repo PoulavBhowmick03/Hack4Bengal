@@ -2,7 +2,7 @@
 
 window.addEventListener("scroll", () => {
     document.querySelector("nav").classList.toggle
-    ('window-scroll', window.scrollY > 150)})
+    ('window-scroll', window.scrollY > 10)})
 
 
     //show/hide faqs
@@ -14,3 +14,15 @@ window.addEventListener("scroll", () => {
             faq.classList.toggle("open");
         })
     })
+
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach((dropdown) => {
+  dropdown.addEventListener('mouseenter', () => {
+    dropdown.querySelector('.dropdown-menu').style.display = 'block';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    dropdown.querySelector('.dropdown-menu').style.display = 'none';
+  });
+});
