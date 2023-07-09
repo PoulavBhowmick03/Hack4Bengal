@@ -32,8 +32,9 @@
           <li><a href="">Quiz</a></li>
           <li><a href="">Contact</a></li>
           <li id="loginButton" style="display: none;"><a href="./signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-
+          
           <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
+          <li id="profilephoto" style="display: none;" class=" "><a href="./profile/profile.html"><i class="fa-solid fa-user"></i></a></li>
         </ul>
     </div>
     </nav>
@@ -282,11 +283,13 @@
           // User is signed in
           logoutButton.style.display = "block";
           loginButton.style.display = "none";
+          profilephoto.style.display="block";
            // Show the logout button
         } else {
           // User is signed out
           logoutButton.style.display = "none";
-          loginButton.style.display = "block"; // Hide the logout button
+          loginButton.style.display = "block";
+          profilephoto.style.display="none"; // Hide the logout button
         }
       });
     }

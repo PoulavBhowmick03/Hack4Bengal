@@ -403,6 +403,7 @@ footer{
   }
   
   .logout{
+    margin-left: -1rem;
     text-align: center;
     background: #e11818;
     border-radius: 3rem;
@@ -415,4 +416,14 @@ footer{
     background: #ff401e;
     color: rgb(0, 0, 0);
     transition: var(--transition);
+}
+
+.profile{
+    margin-left: -2rem;
+    text-align: center;
+    margin-top: 0.1rem;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 1rem;
+    width: 2rem;
 }
