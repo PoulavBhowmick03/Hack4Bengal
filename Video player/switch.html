@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding With WEBFIX</title>
+    <title>Tutorial player</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- <script>
         var embedSrc = "https://www.youtube.com/embed/bMknfKXIFA8";
@@ -121,18 +121,26 @@
     <!---navigation start-->
     <!--Navbar-->
     <nav>
-        <div class="container1 nav-container">
+        <div class="container nav-container">
           <a href="../index.html"><h4>Website</h4></a>
           <ul class="nav-menu">
-            <li><a href="../about.html">About</a></li>
+            <li><a href="./about.html">About</a></li>
   
-            <li><a href="../courses.html">Courses</a></li>
-            <li><a href="../resources.html">Resources</a></li>
-            <li><a href="../resources.html">Initiative</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Resources <i class="fa-solid fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="./resources/PDFs/books.html">All Courses</a></li>
+                <li><a href="./resources/tutorials/tutorials.html">Programming</a></li>
+              </ul>
+            </li>          
+            <li><a href="./resources.html">Initiative</a></li>
             <li><a href="">Quiz</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="../signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-          </ul>
+            <li id="loginButton" style="display: none;"><a href="./signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+
+            <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
+            </ul>
       </div>
       </nav>
       <!--End of Navbar-->
@@ -353,5 +361,47 @@
       });
     });
     </script> -->
+    <script src="index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script>
+    // Initialize Firebase with your project configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDxUEHnP1aN54ULVpaHcZSukaBrLu_1Qdw",
+        authDomain: "insightiq-afdde.firebaseapp.com",
+        projectId: "insightiq-afdde",
+      // ...
+    };
+
+    firebase.initializeApp(firebaseConfig);
+
+    // Function to check user's authentication status
+    function checkUserStatus() {
+      firebase.auth().onAuthStateChanged(function (user) {
+        var logoutButton = document.getElementById("logoutButton");
+
+        if (user) {
+          // User is signed in
+          logoutButton.style.display = "block";
+          loginButton.style.display = "none";
+           // Show the logout button
+        } else {
+          // User is signed out
+          logoutButton.style.display = "none";
+          loginButton.style.display = "block"; // Hide the logout button
+        }
+      });
+    }
+
+    // Function to handle logout
+    function logout() {
+      firebase.auth().signOut().then(function () {
+        window.location.href = "../index.html";
+      }).catch(function (error) {
+        // An error occurred
+        console.log(error);
+      });
+    }
+  </script>
 </body>
 </html>
