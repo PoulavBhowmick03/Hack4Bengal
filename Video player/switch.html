@@ -5,6 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding With WEBFIX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script>
+        var embedSrc = "https://www.youtube.com/embed/bMknfKXIFA8";
+        var iframe = document.createElement("iframe");
+        iframe.width = "960";
+        iframe.height = "515";
+        iframe.src = embedSrc;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        document.getElementById("play-vid-iframe").appendChild(iframe);
+    </script> -->
+    <!-- <script>
+        // var embedSrc = "https://www.youtube.com/embed/bMknfKXIFA8";
+        $(document).ready(function() {
+      // Fetch the JSON data
+      $.getJSON('./links.json', function(data) {
+        var links = data.links;
+
+        // Function to display links based on the selected category
+        function displayLinks(category) {
+          // Clear the existing links
+          $('#linkList').empty();
+
+          // Filter the links based on the selected category
+          var filteredLinks = links;
+
+          // Iterate through the filtered links and create the list
+          $.each(filteredLinks, function(index, link) {
+            var listItem = $('<div class="side-list"></div>');
+            var linkText = $('<a href="switch.html" class="small-size"></a>').text(link.name);
+            linkTextItem = $('<img class="thumbnail" alt="">').attr('src', '../images/thumbnails/'+link.image);
+            var linkDiv = $('<div class="video-info"></div>');
+            var linkCaption = $('<a href="switch.html"></a>').text(link.name);
+            var linkInfo1 = $('<p></p>').text('InsightIQ');
+            var linkInfo2 = $('<p></p>').text('5k views &bull; 1 days');
+            linkDiv.append(linkCaption);
+            linkDiv.append(linkInfo1);
+            linkDiv.append(linkInfo2);
+            linkText.append(linkTextItem);
+            listItem.append(linkText);
+            listItem.append(linkDiv);
+            $('#linkList').append(listItem);
+          });
+        }
+
+        // Display all links initially
+        displayLinks('all');
+      });
+    });
+    </script> -->
+    <script>
+        // var embedSrc = "https://www.youtube.com/embed/bMknfKXIFA8";
+        $(document).ready(function() {
+            
+      // Fetch the JSON data
+      $.getJSON('./links.json', function(data) {
+        var links = data.links;
+
+        // Function to display links based on the selected category
+        function displayLinks(category) {
+          // Clear the existing links
+          $('#linkList').empty();
+
+          // Filter the links based on the selected category
+          var filteredLinks = links;
+
+          // Iterate through the filtered links and create the list
+          $.each(filteredLinks, function(index, link) {
+            var listItem = $('<div class="side-list" id="clickable"></div>').attr('onClick', () => {embedSrc=null;embedSrc=link.url;});
+            var linkText = $('<a class="small-size"></a>').text(link.name);
+            linkTextItem = $('<img class="thumbnail" alt="">').attr('src', '../images/thumbnails/'+link.image);
+            var linkDiv = $('<div class="video-info"></div>');
+            var linkCaption = $('<a href="switch.html"></a>').text(link.name);
+            var linkInfo1 = $('<p></p>').text('InsightIQ');
+            var linkInfo2 = $('<p></p>').text('5k views &bull; 1 days');
+            linkDiv.append(linkCaption);
+            linkDiv.append(linkInfo1);
+            linkDiv.append(linkInfo2);
+            linkText.append(linkTextItem);
+            listItem.append(linkText);
+            listItem.append(linkDiv);
+            $('#linkList').append(listItem);
+          });
+        }
+
+        // Display all links initially
+        displayLinks('all');
+
+       
+      });
+      var embedSrc = "https://www.youtube.com/embed/bMknfKXIFA8";
+        var iframe = document.createElement("iframe");
+        iframe.width = "960";
+        iframe.height = "515";
+        iframe.src = embedSrc;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        document.getElementById("play-vid-iframe").appendChild(iframe);
+    });
+
+    </script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
@@ -36,7 +141,8 @@
     <div class="container play-contain">
         <div class="row">
             <div class="play-vid">
-                <iframe width="960" height="515" src="https://www.youtube.com/embed/bMknfKXIFA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div id="play-vid-iframe"></div>
+                <!-- <iframe width="960" height="515" src={embedSrc} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
                 <div class="tags">
                     <a href="">#programming</a>
                     <a href="">#web-designing</a>
@@ -110,8 +216,8 @@
 
                 </div>
             </div>
-            <div class="right-sidebar">
-                <div class="side-list">
+            <div class="right-sidebar" id="linkList">
+                <!-- <div class="side-list">
                     <a href="switch.html" class="small-size"><img src="../courses/image/Dave.jpeg" class="thumbnail" alt=""></a>
                     <div class="video-info">
                         <a href="switch.html">New Video to be added</a>
@@ -190,11 +296,62 @@
                         <p>InsightIQ</p>
                         <p>5k views &bull; 1 days</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
     <!--video end-->
     <script src="../index.js" > </script>
+    <!-- <script>
+        // var embedSrc = "https://www.youtube.com/embed/bMknfKXIFA8";
+        $(document).ready(function() {
+            
+      // Fetch the JSON data
+      $.getJSON('./links.json', function(data) {
+        var links = data.links;
+
+        // Function to display links based on the selected category
+        function displayLinks(category) {
+          // Clear the existing links
+          $('#linkList').empty();
+
+          // Filter the links based on the selected category
+          var filteredLinks = links;
+
+          // Iterate through the filtered links and create the list
+          $.each(filteredLinks, function(index, link) {
+            var listItem = $('<div class="side-list"></div>').attr('onClick', () => {embedSrc=null;embedSrc=link.url;});
+            var linkText = $('<a class="small-size"></a>').text(link.name);
+            linkTextItem = $('<img class="thumbnail" alt="">').attr('src', '../images/thumbnails/'+link.image);
+            var linkDiv = $('<div class="video-info"></div>');
+            var linkCaption = $('<a href="switch.html"></a>').text(link.name);
+            var linkInfo1 = $('<p></p>').text('InsightIQ');
+            var linkInfo2 = $('<p></p>').text('5k views &bull; 1 days');
+            linkDiv.append(linkCaption);
+            linkDiv.append(linkInfo1);
+            linkDiv.append(linkInfo2);
+            linkText.append(linkTextItem);
+            listItem.append(linkText);
+            listItem.append(linkDiv);
+            $('#linkList').append(listItem);
+          });
+        }
+
+        // Display all links initially
+        displayLinks('all');
+
+        var embedSrc = "https://www.youtube.com/embed/bMknfKXIFA8";
+        var iframe = document.createElement("iframe");
+        iframe.width = "960";
+        iframe.height = "515";
+        iframe.src = embedSrc;
+        iframe.title = "YouTube video player";
+        iframe.frameBorder = "0";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        document.getElementById("play-vid-iframe").appendChild(iframe);
+      });
+    });
+    </script> -->
 </body>
 </html>

@@ -1,0 +1,70 @@
+{
+    "links": [
+        {
+			"name":	"HTML",
+			"url":	"https://www.youtube.com/watch?v=kUMe1FH4CHE&t=12322s",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "HTML.jpg"
+		}, {
+			"name":	"CSS",
+			"url":	"https://www.youtube.com/watch?v=OXGznpKZ_sA&t=9s",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " brocode"],
+			"image": "CSS.jpg"
+		}, {
+			"name":	"JavaScript",
+			"url":	"https://www.youtube.com/watch?v=8dWL3wF_OMw&t=472s",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " dave gray"],
+			"image": "javascript.jpg"
+		}, {
+			"name":	"ReactJS",
+			"url":	"https://www.youtube.com/watch?v=RVFAyFWO4go",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "reactjs.jpg"
+		}, {
+			"name":	"Vue",
+			"url":	"https://www.youtube.com/watch?v=FXpIoQ_rT_c",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "vue.jpg"
+		}, {
+			"name":	"TypeScript",
+			"url":	"https://www.youtube.com/watch?v=30LWjhZzg50",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "typescript.jpg"
+		}, {
+			"name":	"Angular",
+			"url":	"https://www.youtube.com/watch?v=CGLdH5ORX-Y",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " OctAcademy"],
+			"image": "angular.jpg"
+		}, {
+			"name":	"Material UI",
+			"url":	"https://www.youtube.com/watch?v=Xoz31I1FuiY",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " Javascript Mastery"],
+			"image": "materialui.jpg"
+		}, {
+			"name":	"Bootstrap",
+			"url":	"https://www.youtube.com/watch?v=-qfEOE4vtxE",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "bootstrap.jpg"
+		}, {
+			"name":	"Tailwind CSS",
+			"url":	"https://www.youtube.com/watch?v=ft30zcMlFao",
+			"categories":	["tutorial" , "programming", "webdev", " frontend", " fcc"],
+			"image": "tailwind.jpg"
+		}, {
+			"name":	"PHP",
+			"url":	"https://www.youtube.com/watch?v=zZ6vybT1HQs",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " Brocode"],
+			"image": "php.jpg"
+		}, {
+			"name":	"NodeJS",
+			"url":	"https://www.youtube.com/watch?v=f2EqECiTBL8&t=10s",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " Dave Gray"],
+			"image": "nodejs.jpg"
+		},{
+			"name":	"Ruby",
+			"url":	"https://www.youtube.com/watch?v=t_ispmWmdjY",
+			"categories":	["tutorial" , "programming", "webdev", " backend", " fcc"],
+			"image": "ruby.jpg"
+		}
+    ]
+}
