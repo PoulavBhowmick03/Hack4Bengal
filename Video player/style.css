@@ -42,8 +42,10 @@ body::-webkit-scrollbar {
 }
 
 .container {
-    width: var(--container-width-1g); 
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section{
@@ -321,6 +323,14 @@ nav button {
     }
 }
 
+.fa-solid{
+    margin-right: 1.5rem;
+}
+
+.fa-solid:hover{
+    cursor: pointer;
+    color: #182075;
+}
 
 /*--new page---*/
 
@@ -353,6 +363,11 @@ nav button {
     margin-bottom: 8px;
 }
 
+.side-list:hover{
+    transform: scale3d(1.1,1.1,1.1);
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
 .side-list img{
     width: 100%;
 }
