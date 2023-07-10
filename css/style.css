@@ -183,7 +183,11 @@ header{
 .header-left p{
     margin: 1rem 0 2.4rem;
 }
+
+
 /* About */
+
+
 .about-container{
     margin-top: 10rem;
     margin-left: 1rem;
@@ -199,11 +203,19 @@ header{
 .about-container .about-p{
     display: grid;
     grid-template-columns: 0.7fr 0.7fr;
-    font-size: 1.11rem;
+    font-size: 1.2rem;
 }
 .about-container .about-box{
-    box-shadow: 0 1rem 4em rgba(0 , 0, 0 , 0.3);
     border-radius: 1rem;
+}
+
+.about-box{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 3rem;
+}
+.about-container .about-box h2{
+    font-size: 5rem;
 }
 
 /* Categories*/

@@ -5,40 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>About</title>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
+<body onload="checkUserStatus()">
     <!--Navbar--> 
     <nav>
-        <div class="container nav-container">
-          <a href="/index.html"><h4>InsightIQ</h4></a>
-          <ul class="nav-menu">
-            <li><a href="./about.html">About</a></li>
-  
-            <li><a href="./courses/tutorials.html">Courses</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle"> Resources<i class="fa-solid fa-caret-down"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="./resources/PDFs/books.html">All Courses</a></li>
-                <li><a href="./resources/tutorials/tutorials.html">Programming</a></li>
-              </ul>
-            </li>          
-            <li><a href="./resources.html">Initiative</a></li>
-            <li><a href="">Quiz</a></li>
-            <li><a href="">Contact</a></li>
-            <li id="loginButton" style="display: none;"><a href="./signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-            
-            <li class="dropdown">
-              <a href="#" id="profilephoto" class="dropdown-toggle profilephoto" > <i class="fa-solid fa-user"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="./resources/PDFs/books.html">Dashboard</a></li>
-                <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
-              </ul>
-            </li>
-  
-          </ul>
-      </div>
-      </nav>
-      <!--End of Navbar-->
+      <div class="container nav-container">
+        <a href="index.html"><h4>Website</h4></a>
+        <ul class="nav-menu">
+          <li><a href="./about.html">About</a></li>
+
+          <li><a href="./courses/tutorials.html">Courses</a></li>
+          <li><a href="./resources.html">Initiative</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"> Resources<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="./resources/PDFs/books.html">All Courses</a></li>
+              <li><a href="./resources/tutorials/tutorials.html">Programming</a></li>
+            </ul>
+          </li>          
+          <li><a href="">Quiz</a></li>
+          <li><a href="">Contact</a></li>
+          <li id="loginButton" style="display: none;"><a href="./signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+          
+          <li class="dropdown">
+            <a href="#" id="profilephoto" class="dropdown-toggle profilephoto" > <i class="fa-solid fa-user"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="./resources/PDFs/books.html">Dashboard</a></li>
+              <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    </nav>
+    <!--End of Navbar-->
       <div class="about-container">
         <div class="about-header">
         <h1>About Us</h1>
@@ -48,7 +52,69 @@
         </div>
         <div class="about-box">
             <h2>Our motive</h2>
+            <p class="motive">
+              The motive of our educational website is to provide quality education and equal learning opportunities to students primarily from West Bengal, 
+              but also extend our services to students outside the region. We are committed to making education accessible to all, especially those from economically disadvantaged backgrounds. 
+              As part of our mission, we provide free education to individuals below the poverty line, ensuring that financial constraints do not hinder their learning journey.
+              <br>
+              Recognizing the importance of regional languages in fostering effective communication and comprehension, we offer courses in the local language(s) of West Bengal. 
+              By providing education in regional languages, we aim to create a conducive learning environment that resonates with students' cultural and linguistic backgrounds. 
+              This approach not only facilitates better understanding but also promotes inclusivity, enabling students to grasp concepts more effectively.
+              <br>
+              Our ultimate goal is to empower students by equipping them with knowledge, skills, and confidence to succeed academically and beyond. We believe that education is a powerful tool for personal growth, social mobility, and community development. By offering free education to individuals below the poverty line, we aim to bridge the educational gap and contribute to a more equitable society.
+              <br>
+              Through our commitment to quality education, inclusivity, and community engagement, we aspire to be a leading educational platform that nurtures intellectual curiosity, fosters academic excellence, and facilitates holistic development for students in West Bengal and beyond.
+            </p>
         </div>
+        <div class="about-team">
+          <h2>Our Team</h2>
+          
+      </div>
     </div>
+    <script src="../index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script>
+      // Initialize Firebase with your project configuration
+      var firebaseConfig = {
+          apiKey: "AIzaSyDxUEHnP1aN54ULVpaHcZSukaBrLu_1Qdw",
+          authDomain: "insightiq-afdde.firebaseapp.com",
+          projectId: "insightiq-afdde",
+        // ...
+      };
+  
+      firebase.initializeApp(firebaseConfig);
+  
+      // Function to check user's authentication status
+      function checkUserStatus() {
+        firebase.auth().onAuthStateChanged(function (user) {
+          var logoutButton = document.getElementById("logoutButton");
+  
+          if (user) {
+            // User is signed in
+            logoutButton.style.display = "block";
+            loginButton.style.display = "none";
+            profilephoto.style.display="block";
+             // Show the logout button
+          } else {
+            // User is signed out
+            logoutButton.style.display = "none";
+            loginButton.style.display = "block";
+            profilephoto.style.display="none"; // Hide the logout button
+          }
+        });
+      }
+  
+      // Function to handle logout
+      function logout() {
+        firebase.auth().signOut().then(function () {
+          window.location.href = "../index.html";
+        }).catch(function (error) {
+          // An error occurred
+          console.log(error);
+        });
+      }
+    </script>
+  
 </body>
 </html>
