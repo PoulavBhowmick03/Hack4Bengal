@@ -503,3 +503,14 @@ footer{
         color: var(--color-black);
         border-color: var(--color-black);
     }
+    /* Initiative */
+    .h h1{
+        margin-top: 7rem;
+        font-size: 4rem;
+    }
+    .container-i{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    }
