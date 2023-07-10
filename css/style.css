@@ -485,3 +485,21 @@ footer{
     .about-team .members .details-members .photo{
         height: rem;
     }
+
+    /* Profile */
+    .btn-p{
+        display: inline-block; 
+        background: var(--color-white); 
+        color: var(--color-black); 
+        padding: 1rem 2rem; 
+        border: 1px solid transparent; 
+        font-weight: 500; 
+        transition: var (--transition);
+        border-radius: 2rem;
+        border: 2px solid black;
+    }
+    .btn-p:hover{
+        background: transparent;
+        color: var(--color-black);
+        border-color: var(--color-black);
+    }

@@ -2,21 +2,27 @@
 <html>
 <head>
   <title>Profile Information</title>
+  <link rel="stylesheet" href="/css/style.css">
   <style>
     body {
       font-family: Arial, sans-serif;
     }
 
-    .container {
+    .container-p {
       max-width: 400px;
-      margin: 0 auto;
+      margin: 2rem auto;
       padding: 20px;
+      padding-top: 7rem;
+      padding-bottom: 7rem;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 1rem;
     }
-
+    .container-p h2{
+      font-size: 2.5rem;
+    }
     .profile-info {
       margin-bottom: 20px;
+      font-size: 1.2rem;
     }
 
     label {
@@ -46,17 +52,19 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container-p">
     <h2>Profile Information</h2>
-    <div id="profileInfo" class="profile-info">
-      <label>Email:</label>
-      <span id="email"></span>
-    </div>
     <div id="profileInfo" class="profile-info">
       <label>Name:</label>
       <span id="name"></span>
     </div>
-    <button id="signoutBtn" class="btn">Sign Out</button>
+    <div id="profileInfo" class="profile-info">
+      <label>Email:</label>
+      <span id="email"></span>
+    </div>
+      <br>
+      <br>
+    <a href="/index.html"><button id="return" class="btn-p">Sign Out</button></a>
     <p class="message" id="errorMessage"></p>
   </div>
 
@@ -99,13 +107,8 @@
     });
 
     // Add sign out button event listener
-    document.getElementById("signoutBtn").addEventListener("click", function() {
-      firebase.auth().signOut()
-        .catch(function(error) {
-          // Handle sign out errors
-          document.getElementById("errorMessage").textContent = error.message;
-        });
-    });
+    
+    
   </script>
 </body>
 </html>
