@@ -30,9 +30,6 @@
     }
   }
  
-.feature {
-
-}
 .feature:hover{
   transform: scale3d(1.05,1.05,1.05);
 }

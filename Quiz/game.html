@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quick Quiz - Play</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body onload="checkUserStatus()">
+    <!--Navbar--> 
+    <nav>
+      <div class="container nav-container">
+        <a href="index.html"><h4>Website</h4></a>
+        <ul class="nav-menu">
+          <li><a href="./about/about.html">About</a></li>
+
+          <li><a href="./courses/tutorials.html">Courses</a></li>
+          <li><a href="./resources.html">Initiative</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"> Resources     <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="./resources/PDFs/books.html">All Courses</a></li>
+              <li><a href="./resources/tutorials/tutorials.html">Programming</a></li>
+            </ul>
+          </li>          
+          <li><a href="">Quiz</a></li>
+          <li><a href="">Contact</a></li>
+          <li id="loginButton" style="display: none;"><a href="./signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+          
+          <li class="dropdown">
+            <a href="#" id="profilephoto" class="dropdown-toggle profilephoto" > <i class="fa-solid fa-user"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="./resources/PDFs/books.html">Dashboard</a></li>
+              <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    </nav>
+    <!--End of Navbar-->    <div class="container2">
+      <div id="loader"></div>
+      <div id="game" class="justify-center flex-column hidden">
+        <div id="hud">
+          <div id="hud-item">
+            <p id="progressText" class="hud-prefix">
+              Question
+            </p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div id="hud-item">
+            <p class="hud-prefix">
+              Score
+            </p>
+            <h1 class="hud-main-text" id="score">
+              0
+            </h1>
+          </div>
+        </div>
+        <h2 id="question"></h2>
+        <div class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text" data-number="1"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text" data-number="2"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">C</p>
+          <p class="choice-text" data-number="3"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="choice-text" data-number="4"></p>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
