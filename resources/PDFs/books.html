@@ -28,9 +28,9 @@
             var listItem = $('<li class="card feature"></li>');
             var linkText = $('<a></a>').attr('href', link.url).text(link.name);
             // ADD IMG ELEMENT WITH SRC='LINK.IMG' 
-            var linkImg = $('<img></img>').attr('src', "./images/thumbnails/"+link.image)
+            // var linkImg = $('<img></img>').attr('src', "./images/thumbnails/"+link.image)
             listItem.append(linkText);
-            listItem.append(linkImg);
+            // listItem.append(linkImg);
             $('#linkList').append(listItem);
           });
         }
@@ -48,6 +48,7 @@
   </script>
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" type="text/css" href="../../css/resources.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body onload="checkUserStatus()">
   <nav>
