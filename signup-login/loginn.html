@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/d1c523657e.js" crossorigin="anonymous"></script>
     <script src="./js/Landingpage.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->  
     <link rel="stylesheet" href="./login.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -17,20 +16,34 @@
   </head>
   <body>
     <nav>
-        <div class="container nav-container">
-          <a href="../index.html"><h4><strong>Website</strong></h4></a>
-          <ul class="nav-menu">
-            <li><a href="../about.html">About</a></li>
-  
-            <li><a href="../courses.html">Courses</a></li>
-            <li><a href="../resources.html">Resources</a></li>
-            <li><a href="../resources.html">Initiative</a></li>
-            <li><a href="">Quiz</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="./signupn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-          </ul>
-      </div>
-      </nav>
+      <div class="container nav-container">
+        <a href="../index.html"><h4>Website</h4></a>
+        <ul class="nav-menu">
+          <li><a href="../about/about.html">About</a></li>
+
+          <li><a href="../courses/tutorials.html">Courses</a></li>
+          <li><a href="../initiative/ini.html">Initiative</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Resources <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="../resources/PDFs/books.html">Books</a></li>
+              <li><a href="../resources/tutorials/tutorials.html">Tutorials</a></li>
+            </ul>
+          </li>          
+          <li><a href="">Quiz</a></li>
+          <li><a href="">Contact</a></li>
+          <li id="loginButton" style="display: none;"><a href="../signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+
+          <li class="dropdown">
+            <a href="#" id="profilephoto" class="dropdown-toggle profilephoto" > <i class="fa-solid fa-user"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="./resources/PDFs/books.html">Dashboard</a></li>
+              <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    </nav>
 
     <section>
       <div class="login-box">

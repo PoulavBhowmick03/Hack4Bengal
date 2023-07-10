@@ -15,25 +15,28 @@
 
         // Function to display links based on the selected category
         function displayLinks(category) {
-          // Clear the existing links
-          $('#linkList').empty();
+  // Clear the existing links
+  $('#linkList').empty();
 
-          // Filter the links based on the selected category
-          var filteredLinks = (category === 'all') ? links : links.filter(function(link) {
-            return link.categories.includes(category);
-          });
+  // Filter the links based on the selected category
+  var filteredLinks = (category === 'all') ? links : links.filter(function(link) {
+    return link.categories.includes(category);
+  });
 
-          // Iterate through the filtered links and create the list
-          $.each(filteredLinks, function(index, link) {
-            var listItem = $('<li class="card feature"></li>');
-            var linkText = $('<a></a>').attr('href', link.url).text(link.name);
-            // ADD IMG ELEMENT WITH SRC='LINK.IMG' 
-            var linkImg = $('<img></img>').attr('src', "./image/"+link.image)
-            listItem.append(linkText);
-            listItem.append(linkImg);
-            $('#linkList').append(listItem);
-          });
-        }
+  // Iterate through the filtered links and create the list
+  $.each(filteredLinks, function(index, link) {
+    var listItem = $('<li class="card feature"></li>');
+    var linkText = $('<a></a>').attr('href', link.url).text(link.name);
+    var linkImg = $('<img></img>').attr({
+      'src': "./image/" + link.image,
+      'alt': link.name,
+      'title': link.name,
+    });
+    linkText.append(linkImg); // Wrap the img element inside the anchor tag
+    listItem.append(linkText);
+    $('#linkList').append(listItem);
+  });
+}
 
         // Event handler for category buttons
         $('.categoryBtn').click(function() {
@@ -52,24 +55,30 @@
 <body>
   <nav>
     <div class="container nav-container">
-      <a href="../../index.html"><h4>Website</h4></a>
+      <a href="../index.html"><h4>Website</h4></a>
       <ul class="nav-menu">
         <li><a href="../about/about.html">About</a></li>
 
-        <li><a href="../../courses/courses.html">Courses</a></li>
+        <li><a href="../courses/tutorials.html">Courses</a></li>
+        <li><a href="../initiative/ini.html">Initiative</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Resources <i class="fa-solid fa-caret-down"></i></a>
           <ul class="dropdown-menu">
             <li><a href="../resources/PDFs/books.html">Books</a></li>
-            <li><a href="../tutorials/tutorials.html">Tutorials</a></li>
+            <li><a href="../resources/tutorials/tutorials.html">Tutorials</a></li>
           </ul>
         </li>          
-        <li><a href="./resources.html">Initiative</a></li>
         <li><a href="">Quiz</a></li>
         <li><a href="">Contact</a></li>
-        <li id="loginButton" style="display: none;"><a href="./signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+        <li id="loginButton" style="display: none;"><a href="../signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
 
-        <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
+        <li class="dropdown">
+          <a href="#" id="profilephoto" class="dropdown-toggle profilephoto" > <i class="fa-solid fa-user"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="./resources/PDFs/books.html">Dashboard</a></li>
+            <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
+          </ul>
+        </li>
       </ul>
   </div>
   </nav>
@@ -82,5 +91,48 @@
 
   <ul id="linkList"></ul>
   <script src="../../index.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script>
+    // Initialize Firebase with your project configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDxUEHnP1aN54ULVpaHcZSukaBrLu_1Qdw",
+        authDomain: "insightiq-afdde.firebaseapp.com",
+        projectId: "insightiq-afdde",
+      // ...
+    };
+
+    firebase.initializeApp(firebaseConfig);
+
+    // Function to check user's authentication status
+    function checkUserStatus() {
+      firebase.auth().onAuthStateChanged(function (user) {
+        var logoutButton = document.getElementById("logoutButton");
+
+        if (user) {
+          // User is signed in
+          logoutButton.style.display = "block";
+          loginButton.style.display = "none";
+          profilephoto.style.display="block";
+           // Show the logout button
+        } else {
+          // User is signed out
+          logoutButton.style.display = "none";
+          loginButton.style.display = "block";
+          profilephoto.style.display="none"; // Hide the logout button
+        }
+      });
+    }
+
+    // Function to handle logout
+    function logout() {
+      firebase.auth().signOut().then(function () {
+        window.location.href = "../index.html";
+      }).catch(function (error) {
+        // An error occurred
+        console.log(error);
+      });
+    }
+  </script>
 </body>
 </html>

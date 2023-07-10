@@ -2,16 +2,17 @@
 #linkList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
   }
   
   /* Styling for the list item cards */
   .card {
+    width: 15rem;
     flex-basis: 30%; /* Adjust as per your preference for relative sizing */
     border-radius: 10px; 
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   }
@@ -30,11 +31,10 @@
   }
  
 .feature {
-  width: auto;
-  height: auto;
+
 }
 .feature:hover{
-  transform: scale3d(1.1,1.1,1.1);
+  transform: scale3d(1.05,1.05,1.05);
 }
 .filter-btn {
   display: flex;
@@ -42,7 +42,13 @@
 }
 
 #heading {
-  margin-top: 4rem;
+font-family: serif;  
+text-align: center;
+  color: #000;
+  margin-top: 5rem;
+  margin-left: 4rem;
+  font-size: 2.5rem;
+
 }
 
 .current-tab {
@@ -52,4 +58,37 @@
 .current {
   border-bottom: 3px solid black;
   padding-bottom: -30px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }

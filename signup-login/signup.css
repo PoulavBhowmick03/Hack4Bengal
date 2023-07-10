@@ -188,3 +188,37 @@ footer ul li a:hover{
   color: rgb(203, 5, 5);
 
 }
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
