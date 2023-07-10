@@ -514,3 +514,7 @@ footer{
         margin-top: 2rem;
         font-size: 1.3rem;
     }
+    .container-i .map{
+        margin-left: 4rem;
+        padding-left: 4rem;
+    }
