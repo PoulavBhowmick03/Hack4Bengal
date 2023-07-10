@@ -183,6 +183,28 @@ header{
 .header-left p{
     margin: 1rem 0 2.4rem;
 }
+/* About */
+.about-container{
+    margin-top: 10rem;
+    margin-left: 1rem;
+}
+.about-container .about-header h1{
+    font-size: 5rem;
+}
+.about-container h2{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    }
+.about-container .about-p{
+    display: grid;
+    grid-template-columns: 0.7fr 0.7fr;
+    font-size: 1.11rem;
+}
+.about-container .about-box{
+    box-shadow: 0 1rem 4em rgba(0 , 0, 0 , 0.3);
+    border-radius: 1rem;
+}
 
 /* Categories*/
 
