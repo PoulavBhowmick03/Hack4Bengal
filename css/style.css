@@ -507,14 +507,21 @@ footer{
     .h h1{
         margin-top: 7rem;
         font-size: 4rem;
+        margin-left: 1rem;
     }
     .container-i{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 2rem;
+        margin-left: 1rem;
         font-size: 1.3rem;
     }
     .container-i .map{
         margin-left: 4rem;
         padding-left: 4rem;
+    }
+    .criteria{
+        font-size: 1.2rem;
+        padding: 1rem;
+        line-height: 1.5rem;
     }
