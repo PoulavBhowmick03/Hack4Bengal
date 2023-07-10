@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Initiative</title>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+</head>
+<body onload="checkUserStatus()">
+    <!--Navbar--> 
+    <nav>
+      <div class="container nav-container">
+        <a href="/index.html"><h4>InsightIQ</h4></a>
+        <ul class="nav-menu">
+          <li><a href="./about.html">About</a></li>
+
+          <li><a href="/courses/courses.html">Courses</a></li>
+          <li><a href="#">Initiative</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"> Resources<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="/resources/PDFs/books.html">All Courses</a></li>
+              <li><a href="/resources/tutorials/tutorials.html">Programming</a></li>
+            </ul>
+          </li>          
+          <li><a href="/Quiz/index.html">Quiz</a></li>
+          <li><a href="/contactUs/contactus.html">Contact</a></li>
+          <li id="loginButton" style="display: none;"><a href="./signup-login/loginn.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+          
+          <li class="dropdown">
+            <a href="#" id="profilephoto" class="dropdown-toggle profilephoto" > <i class="fa-solid fa-user"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="/profile/profile.html">Dashboard</a></li>
+              <li id="logoutButton" style="display: none;" onclick="logout()" class="logout">Logout</li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    </nav>
+    <!--End of Navbar-->
+    <div class="container-i">
+        <div class="plan">
+            <h1>The Rural Initiative Plan</h1>
+            <p>InsightIQ offers it's unique Rural Initiative Plan </p>
+        </div>
+        <div class="map"></div>
+    </div>
+    <script src="../index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script>
+      // Initialize Firebase with your project configuration
+      var firebaseConfig = {
+          apiKey: "AIzaSyDxUEHnP1aN54ULVpaHcZSukaBrLu_1Qdw",
+          authDomain: "insightiq-afdde.firebaseapp.com",
+          projectId: "insightiq-afdde",
+        // ...
+      };
+  
+      firebase.initializeApp(firebaseConfig);
+  
+      // Function to check user's authentication status
+      function checkUserStatus() {
+        firebase.auth().onAuthStateChanged(function (user) {
+          var logoutButton = document.getElementById("logoutButton");
+  
+          if (user) {
+            // User is signed in
+            logoutButton.style.display = "block";
+            loginButton.style.display = "none";
+            profilephoto.style.display="block";
+             // Show the logout button
+          } else {
+            // User is signed out
+            logoutButton.style.display = "none";
+            loginButton.style.display = "block";
+            profilephoto.style.display="none"; // Hide the logout button
+          }
+        });
+      }
+  
+      // Function to handle logout
+      function logout() {
+        firebase.auth().signOut().then(function () {
+          window.location.href = "../index.html";
+        }).catch(function (error) {
+          // An error occurred
+          console.log(error);
+        });
+      }
+    </script>
+  
+</body>
+</html>
