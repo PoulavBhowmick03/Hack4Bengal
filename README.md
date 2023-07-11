@@ -2,7 +2,7 @@
 
 Welcome to the InsgihtIQ repository! InsgihtIQ is an online learning platform that offers a wide range of educational resources, interactive quizzes, and courses on various subjects and topics. Whether you're a student looking to enhance your knowledge or a teacher wanting to create engaging learning materials, InsgihtIQ has got you covered.
 
-## Check out our website [here](https://insightiq-afdde.web.app/)
+## Check out our website [here](https://insightiq03-pj7on7j4g-poulavbhowmick03.vercel.app/)
 ## Table of Contents
 
 - [About InsgihtIQ](#about InsgihtIQ)
