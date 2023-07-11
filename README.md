@@ -2,7 +2,7 @@
 
 Welcome to the InsgihtIQ repository! InsgihtIQ is an online learning platform that offers a wide range of educational resources, interactive quizzes, and courses on various subjects and topics. Whether you're a student looking to enhance your knowledge or a teacher wanting to create engaging learning materials, InsgihtIQ has got you covered.
 
-## Check out our website here-> https://poulavbhowmick03.github.io/Hack4Bengal/
+## Check out our website [here](https://insightiq-afdde.web.app/)
 ## Table of Contents
 
 - [About InsgihtIQ](#about InsgihtIQ)
@@ -32,7 +32,7 @@ Welcome to the InsgihtIQ repository! InsgihtIQ is an online learning platform th
 
 To access the InsgihtIQ platform and start exploring the courses and resources, follow these steps:
 
-1. **Visit the InsgihtIQ Website:** Go to [www InsgihtIQ.com](https://www InsgihtIQ.com) in your web browser.
+1. **Visit the InsgihtIQ Website:** Go to https://insightiq-afdde.web.app/ in your web browser.
 
 2. **Sign Up:** Create a new account by providing your email address and choosing a password. You can also sign in using your existing social media accounts.
 
