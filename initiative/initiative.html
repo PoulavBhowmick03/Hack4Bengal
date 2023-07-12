@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Initiative</title>
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
@@ -62,6 +62,16 @@
       <p>3. We might also provide study materials to instituions that are in need of such.</p>
       <p>We contact further NGOs for collaborating with us regarding bigger projects.</p>
     </div>
+
+    <div class="form-box">
+      <h2>Contact Us</h2>
+      <input type="text" id="fullName" placeholder="Name" required>
+      <input type="email" id="email_id" placeholder="Email" required>
+      <textarea id="message" placeholder="Message"></textarea>
+      <button type="submit" onclick="SendMail()">Submit</button>
+    </div>
+
+
     <script src="../index.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>

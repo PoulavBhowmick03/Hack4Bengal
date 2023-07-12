@@ -1,7 +1,8 @@
 .choice-container {
+  border-radius: 0.4rem;
   display: flex;
   margin-bottom: 0.5rem;
-  width: 90%;
+  width: 100%;
   font-size: 1.em;
   border: 0.1rem solid rgb(86, 165, 235, 0.25);
   background-color: white;
@@ -15,6 +16,9 @@
 }
 
 .choice-prefix {
+  padding-top: 8px;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
   text-align: center;
   width: 5rem;
   height: inherit;
